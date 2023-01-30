@@ -13,11 +13,11 @@ class MyHeader extends HTMLElement{
 
         ]
 
-        for(let i = 0; i < 5; i++){
+        for(let i = 0; i < myLinks.length; i++){
             let li = document.createElement("li");
             let a = document.createElement("a");
             a.setAttribute("href", "https://www.google.com.br/");
-            a.textContent = `Pagina ${i}`;
+            a.textContent = `myLinks[i][1]`;
             li.appendChild(a);
             ul.appendChild(li);
         }
