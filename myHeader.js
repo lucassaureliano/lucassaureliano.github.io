@@ -17,7 +17,7 @@ class MyHeader extends HTMLElement{
             let li = document.createElement("li");
             let a = document.createElement("a");
             a.setAttribute("href", "https://www.google.com.br/");
-            a.textContent = `myLinks[i][1]`;
+            a.textContent = `myLinks[i][0]`;
             li.appendChild(a);
             ul.appendChild(li);
         }
