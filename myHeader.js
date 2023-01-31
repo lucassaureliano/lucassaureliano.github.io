@@ -4,25 +4,29 @@ class MyHeader extends HTMLElement{
         const header = document.createElement("header");
         const nav = document.createElement("nav");
         const ul = document.createElement("ul");
+        const titleDiv = document.createElement("div");
+        const pageTitle = document.createElement("h1");
 
         const myLinks = [
-            ["Google", "https://www.google.com.br/"],
-            ["Bing", "https://www.bing.com/?cc=br"],
-            ["DuckDuckGo", "https://duckduckgo.com/"],
-            ["Ecosia", "https://www.ecosia.org/"]
-
-        ]
+            ["Início", "/"],
+            ["Teste", "/teste.html"],
+            ["Projeto 1", "/projects/projeto1.html"],
+            
+        ];
 
         for(let i = 0; i < myLinks.length; i++){
             let li = document.createElement("li");
             let a = document.createElement("a");
-            a.setAttribute("href", "https://www.google.com.br/");
-            a.textContent = `myLinks[i][0]`;
+            a.setAttribute("href", myLinks[i][1]);
+            a.textContent = myLinks[i][0];
             li.appendChild(a);
             ul.appendChild(li);
         }
 
         nav.appendChild(ul);
+        pageTitle.textContent = "Meu Site";
+        titleDiv.appendChild(pageTitle);   
+        header.appendChild(titleDiv);
         header.appendChild(nav);
         this.appendChild(header);
 
