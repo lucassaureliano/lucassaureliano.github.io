@@ -4,7 +4,7 @@ const myLinks = [
     ["Projeto 1", "/projects/projeto1.html"],
     ["Currículo", "/curriculo.pdf"],
     ["GitHub", "https://github.com/lucassaureliano"],
-    ["LinkedIn", "https://linkedin.com/in/lucassaureliano"],
+    ["LinkedIn", "https://linkedin.com/in/lucassaureliano"]
  
 ];
 class MyHeader extends HTMLElement{
