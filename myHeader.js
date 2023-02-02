@@ -5,7 +5,7 @@ const myLinks = [
     ["Currículo", "/curriculo.pdf"],
     ["GitHub", "https://github.com/lucassaureliano"],
     ["LinkedIn", "https://linkedin.com/in/lucassaureliano"],
-    
+ 
 ];
 class MyHeader extends HTMLElement{
     connectedCallback() {
