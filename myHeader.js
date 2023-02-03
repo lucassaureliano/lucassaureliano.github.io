@@ -34,6 +34,7 @@ function navBar(webPageList){
     for(let i = 0; i < webPageList.length; i++){
         let li = document.createElement("li");
         let a = document.createElement("a");
+        li.setAttribute("class", "myNavBar");
         a.setAttribute("href", webPageList[i][1]);
         a.textContent = webPageList[i][0];
         li.appendChild(a);
@@ -45,4 +46,11 @@ function navBar(webPageList){
     return nav;
 }
 
+function addCSS(){
+        let myCSS = document.createElement("link");
+    myCSS.setAttribute("rel", "stylesheet");
+    myCSS.setAttribute("href", "/estilo.css");
+document.head.appendChild(myCSS);
+}
+addCSS();
 customElements.define("my-header", MyHeader);
