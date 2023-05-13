@@ -7,16 +7,22 @@ div#site {
 	width: 40%;
 	left: 50%;
 	margin-left: -20%;
+	text-align: center;
 }
 
 img.logo {
 		filter: grayscale(100%) brightness(100);
 		width: 55px;
 		height: 55px;
+		margin-right: 5px;
 		}
 div.link {
-	width: 180px;
-	background: #F00;
+	display: inline-block;
+	width: 160px;
+}
+div.conteudo-link {
+	display: flex;
+	align-items: center;
 }
 
 @media (max-width: 480px) {
