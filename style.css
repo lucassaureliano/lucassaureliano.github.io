@@ -1,0 +1,27 @@
+body {
+	background: #131313;
+	color: #FFFFFF;
+}
+div#site {
+	position: absolute;
+	width: 40%;
+	left: 50%;
+	margin-left: -20%;
+}
+
+img.logo {
+		filter: grayscale(100%) brightness(100);
+		width: 55px;
+		height: 55px;
+		}
+div.link {
+	width: 180px;
+	background: #F00;
+}
+
+@media (max-width: 480px) {
+	div#site {
+		width: 95%;
+		margin-left: -47.5%;
+	}
+}
