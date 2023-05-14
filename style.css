@@ -19,6 +19,15 @@ div.link {
 	display: inline-block;
 	width: 70px;
 }
+div.logo-container {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+a.link-content:focus div.logo-container, 
+a.link-content:hover div.logo-container {
+	background-color: #30bcd5;
+}
 
 @media (max-width: 480px) {
 	div#site {
